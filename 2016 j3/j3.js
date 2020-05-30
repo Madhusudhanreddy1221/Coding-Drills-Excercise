@@ -16,12 +16,12 @@ function LongestPlaindrome(str1){
     //for loop to iterate till the "i" matches the length of user entered string is matched
     for(var i=0; i < str1.length; i++)
     {
-        //Removing one character from the string each time a for loop is ieterated and storing it in subs
+        //Removing one character from the string each time a for loop is ieterated and storing it in subsstring
         var subsstring = str1.substr(i, str1.length);
 
         for(var j=subsstring.length; j>=0; j--)
         {
-            //removing one character at a time from substring
+            
             var sub_subs_str = subsstring.substr(0, j);
             //Condition to check if the sub sub string length is less than or equal to 1
             if (sub_subs_str.length <= 1)
